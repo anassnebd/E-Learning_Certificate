@@ -1,0 +1,26 @@
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.centervh {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.ptt{
+    padding-top: 2px;
+}
+.current{
+    background-color: wheat;
+    color: red;
+    width: 100px;
+}
+.link_sb:hover{
+    background-color: #3D469C;
+}
