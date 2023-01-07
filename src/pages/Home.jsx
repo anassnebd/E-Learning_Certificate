@@ -1,6 +1,7 @@
 import React from 'react';
 import html2canvas from 'html2canvas';
 import './app.scss'
+import { FacebookShareCount } from 'react-share';
 
 import CetImgTst from '../assets/icons/image 16.png'
 
@@ -21,6 +22,8 @@ const Home = () => {
       <div style={{ position: 'absolute', zIndex: 1, top: 10, left: 10 }}>
         Mon texte sur l'image
       </div>
+      <FacebookShareCount url='./certificate' />
+
     </div>
       <button onClick={handleDownload}>Télécharger l'image</button>
       </div>

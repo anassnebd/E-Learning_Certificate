@@ -8,6 +8,10 @@ import { Outlet } from 'react-router-dom'
 import PrimeIcon from '../assets/icons/congrats.png'
 import CertificateImg from '../assets/certificate.png'
 import html2canvas from 'html2canvas';
+import { FacebookShareCount } from 'react-share';
+import { ShareButton } from "react-custom-share";
+
+
 
 import './app.scss'
 
@@ -19,6 +23,14 @@ function Certificate() {
       link.href = canvas.toDataURL();
       link.click();
     });
+  };
+
+  const shareButtonProps = {
+    url: "www.tedora.info",
+    network: "Facebook",
+    text: "Tedora.info - ReactJs Certification",
+    longtext:
+      "ReactJs Certification approved by Tedora.info Earn yours Now!."
   };
 
   return (
@@ -36,9 +48,11 @@ function Certificate() {
             </div>
             <div className='mt-14 pb-9 flex '>
               <button onClick={handleDownloadCertif} className='text-black bg-gold w-64 h-11 rounded-sm center'>Télécharger l'image</button>
-              <button className='text-white bg-primary_blue w-64 h-11 rounded-sm center'>Share</button>
-
+              <ShareButton {...shareButtonProps} className='center'>
+              <button className='text-white bg-primary_blue w-64 h-11 rounded-sm  '>Share</button>
+              </ShareButton>
             </div>
+      {/* <FacebookShareCount url='./certificate' /> */}
 
         </div>
     </div>
