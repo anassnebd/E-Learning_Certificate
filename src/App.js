@@ -19,6 +19,7 @@ function App() {
       <Router>
         <Routes>
           <Route exact path="/" element={<Certificate />}/>
+          <Route exact path="/certificate" element={<Certificate />}/>
           <Route path="/introduction" element={<Introduction />}/>
           <Route path="/components" element={<ReactComponents />}/>
           <Route path="/jsx" element={<ReactJsx />}/>
