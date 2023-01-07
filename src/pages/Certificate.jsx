@@ -19,7 +19,7 @@ function Certificate() {
   const handleDownloadCertif = () => {
     html2canvas(document.querySelector('#capture_cert')).then((canvas) => {
       const link = document.createElement('a');
-      link.download = 'image.png';
+      link.download = 'Certificate.png';
       link.href = canvas.toDataURL();
       link.click();
     });
@@ -36,7 +36,7 @@ function Certificate() {
   return (
     <div className='Certificate'>
         <Header/>
-        <div className='center w-3/5 h-96 '>
+        <div className='center w-3/5  '>
             <div className='center flex align-text-bottom pt-12'>
               <h1 className='center flex pt-1 text-2xl text-white'>Congratulations on you Work “Anass Nebdaoui” &nbsp;&nbsp;<img src={PrimeIcon} alt="" className='-mt-2 w-10 h-9'/></h1>
             </div>
@@ -46,7 +46,7 @@ function Certificate() {
                 <h1 style={{ position: 'absolute', zIndex: 1, top: 185 ,left:0,right:0}} className='text-white name_cert text-6xl text-center w-full'>Anass Nebdaoui</h1>
               </div>
             </div>
-            <div className='mt-14 pb-9 flex '>
+            <div className='mt-14  flex '>
               <button onClick={handleDownloadCertif} className='text-black bg-gold w-64 h-11 rounded-sm center'>Télécharger l'image</button>
               <ShareButton {...shareButtonProps} className='center'>
               <button className='text-white bg-primary_blue w-64 h-11 rounded-sm  '>Share</button>
