@@ -12,13 +12,13 @@ function sidebar() {
         <ul>
             <li className=''>
                 <Link to="/introduction" activeClassName="current" className='link_sb pl-16 pt-3 text-white text-sm flex rounded-md h-12 mt-3 '>
-                    <img src={ReadingIcon} alt="" className='h-6 -ml-6' /><p className='ml-6 ptt'>Introduction</p>
+                    <img src={VideoIcon} alt="" className='h-6 -ml-6' /><p className='ml-6 ptt'>Introduction</p>
                 </Link>
             </li>
             
             <li className=''>
                 <NavLink to="/esc" className='link_sb pl-16 pt-3 text-white text-sm flex rounded-md h-12'>
-                    <img src={VideoIcon} alt="" className='h-4 mt-1 -ml-6' /><p className='ml-6 ptt'>What is a Hook</p>
+                    <img src={ReadingIcon} alt="" className='h-6  -ml-6' /><p className='ml-6 ptt'>What is a Hook</p>
                 </NavLink>
             </li>
             <li className=''>
@@ -32,8 +32,8 @@ function sidebar() {
                 </NavLink>
             </li>
             <li className=''>
-                <NavLink to="/class" className='link_sb pl-16 pt-3 text-white text-sm flex rounded-md h-12'>
-                    <img src={ReadingIcon} alt="" className='h-6 -ml-6' /><p className='ml-6 ptt'>Class</p>
+                <NavLink to="/classes" className='link_sb pl-16 pt-3 text-white text-sm flex rounded-md h-12'>
+                    <img src={VideoIcon} alt="" className='h-6 -ml-6' /><p className='ml-6 ptt'>Classes</p>
                 </NavLink>
             </li>
             <li className=''>
@@ -53,7 +53,7 @@ function sidebar() {
             </li>
             <li className=''>
                 <NavLink to="/router" className='link_sb pl-16 pt-3 text-white text-sm flex rounded-md h-12'>
-                    <img src={ReadingIcon} alt="" className='h-6 -ml-6' /><p className='ml-6 ptt'>Router</p>
+                    <img src={VideoIcon} alt="" className='h-6 -ml-6' /><p className='ml-6 ptt'>Router</p>
                 </NavLink>
             </li>
             <li className=''>
