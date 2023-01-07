@@ -1,9 +1,16 @@
 import React from 'react'
 import './content.scss'
 import { Link } from 'react-router-dom'
-
+import Header from '../../components/header/Header'
+import Sidebar from '../../components/sidebar/Sidebar'
 function Introduction() {
   return (
+    <div>
+
+    <Header/>
+        <div className='flex'>
+            <Sidebar/>
+        
     <div className='introduction pt-7 pl-20 text-white overflow-x-hidden overflow-y-auto'>
         <div className='flex'>
             <h1>" &nbsp;&nbsp;&nbsp;</h1><h1 className='text-primary_purple text-2xl underline'> 
@@ -23,6 +30,9 @@ function Introduction() {
             </Link>
         </div>
     </div>
+    </div>
+    </div>
+
   )
 }
 

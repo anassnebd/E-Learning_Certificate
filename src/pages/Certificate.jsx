@@ -4,6 +4,7 @@ import ReactJsx from '../components/content/ReactJsx'
 import Header from '../components/header/Header'
 import Sidebar from '../components/sidebar/Sidebar'
 import ReactComponents from '../components/content/ReactComponents'
+import { Outlet } from 'react-router-dom'
 
 function Certificate() {
   return (
@@ -11,7 +12,7 @@ function Certificate() {
         <Header/>
         <div className='flex'>
             <Sidebar/>
-            <ReactComponents/>
+            <Outlet/>
         </div>
     </div>
   )
