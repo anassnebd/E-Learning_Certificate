@@ -23,11 +23,11 @@ export default function ReaclClasses() {
         </p><br/>
         <iframe width="760" height="423" src="https://www.youtube.com/embed/2z7ZNgFRppw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         <div className=' ml-auto mr-80 w-2'>
-            <Link to="">
+            <a href="props">
                 <button className='bg-primary_purple w-40 h-10 rounded-md mt-12 mb-12'>
                     Suivant
                 </button>
-            </Link>
+            </a>
         </div>
     </div>
     </div>

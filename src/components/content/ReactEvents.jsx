@@ -42,11 +42,11 @@ function ReactEvents() {
         <img src={EventsImg} className="mt-3" alt="" />
 
         <div className=' ml-auto mr-80 w-2'>
-            <Link to="">
+            <a href="forms">
                 <button className='bg-primary_purple w-40 h-10 rounded-md mt-12 mb-12'>
                     Suivant
                 </button>
-            </Link>
+            </a>
         </div>
     </div>
     </div>

@@ -53,11 +53,11 @@ function ReactComponents() {
         <img src={FuncComponentExample} className="mt-3" alt="" />
         {/* <iframe width="760" height="423" src="https://www.youtube.com/embed/N3AkSS5hXMA" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe> */}
         <div className=' ml-auto mr-80 w-2'>
-            <Link to="">
+            <a href="classes">
                 <button className='bg-primary_purple w-40 h-10 rounded-md mt-12 mb-12'>
                     Suivant
                 </button>
-            </Link>
+            </a>
         </div>
     </div>
     </div>

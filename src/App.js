@@ -12,13 +12,14 @@ import ReactEvents from './components/content/ReactEvents';
 import ReactForms from './components/content/ReactForms';
 import ReactRouter from './components/content/ReactRouter';
 import ReactQuiz from './components/content/ReactQuiz';
+import Authentification from './components/Authentification';
 
 function App() {
   return (
     <div>
       <Router>
         <Routes>
-          <Route exact path="/" element={<Certificate />}/>
+          <Route exact path="/" element={<Introduction />}/>
           <Route exact path="/certificate" element={<Certificate />}/>
           <Route path="/introduction" element={<Introduction />}/>
           <Route path="/components" element={<ReactComponents />}/>
@@ -31,6 +32,7 @@ function App() {
           <Route path="/forms" element={<ReactForms />}/>
           <Route path="/router" element={<ReactRouter />}/>
           <Route path="/quiz" element={<ReactQuiz />}/>
+          <Route path="/auth" element={<Authentification />}/>
         </Routes>
       </Router>
     </div>

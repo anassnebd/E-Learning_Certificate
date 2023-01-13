@@ -38,12 +38,12 @@ function Certificate() {
         <Header/>
         <div className='center w-3/5  '>
             <div className='center flex align-text-bottom pt-12'>
-              <h1 className='center flex pt-1 text-2xl text-white'>Congratulations on you Work “Anass Nebdaoui” &nbsp;&nbsp;<img src={PrimeIcon} alt="" className='-mt-2 w-10 h-9'/></h1>
+              <h1 className='center flex pt-1 text-2xl text-white'>Congratulations on you Work “{localStorage.getItem('nom_certif')}” &nbsp;&nbsp;<img src={PrimeIcon} alt="" className='-mt-2 w-10 h-9'/></h1>
             </div>
             <div className='certif_neon h-auto mt-12'>
               <div className='center h-auto' id='capture_cert'>
                 <img src={CertificateImg} className='' alt="" />
-                <h1 style={{ position: 'absolute', zIndex: 1, top: 185 ,left:0,right:0}} className='text-white name_cert text-6xl text-center w-full'>Anass Nebdaoui</h1>
+                <h1 style={{ position: 'absolute', zIndex: 1, top: 185 ,left:0,right:0}} className='text-white name_cert text-6xl text-center w-full'>{localStorage.getItem('nom_certif')}</h1>
               </div>
             </div>
             <div className='mt-14  flex '>
